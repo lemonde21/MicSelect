@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>title</key>
+    <string>MicSelect</string>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Microphone input</string>
+            <key>footerText</key>
+            <string>Default lets iOS choose. Built-in keeps the iPad’s internal microphone even when earphones are plugged in. Changes apply instantly, including to apps already running.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSegmentCell</string>
+            <key>defaults</key>
+            <string>com.lemonde21.micselect</string>
+            <key>key</key>
+            <string>mode</string>
+            <key>default</key>
+            <integer>0</integer>
+            <key>validValues</key>
+            <array>
+                <integer>0</integer>
+                <integer>1</integer>
+                <integer>2</integer>
+            </array>
+            <key>validTitles</key>
+            <array>
+                <string>Default</string>
+                <string>Built-in</string>
+                <string>Headset</string>
+            </array>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Test</string>
+            <key>footerText</key>
+            <string>Plays the selected microphone into your earphones so you can hear which one is active. Switch the input above while listening to compare. Only works with earphones connected, to prevent feedback.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>id</key>
+            <string>monitor</string>
+            <key>label</key>
+            <string>Listen to microphone</string>
+            <key>get</key>
+            <string>readMonitor:</string>
+            <key>set</key>
+            <string>setMonitor:specifier:</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSDefaultCell</string>
+            <key>cellClass</key>
+            <string>MSPLevelCell</string>
+            <key>height</key>
+            <integer>72</integer>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>footerText</key>
+            <string>Plug in your headset first, then check whether the internal microphone is still listed.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>Check connected microphones</string>
+            <key>action</key>
+            <string>showInputs</string>
+        </dict>
+    </array>
+</dict>
+</plist>

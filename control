@@ -1,0 +1,9 @@
+Package: com.lemonde21.micselect
+Name: MicSelect
+Version: 0.3.0
+Architecture: iphoneos-arm64
+Description: Choose which microphone apps use (internal or headset), even with earphones plugged in.
+Maintainer: lemonde21
+Author: lemonde21
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
